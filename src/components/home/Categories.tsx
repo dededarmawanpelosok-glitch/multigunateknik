@@ -1,80 +1,64 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { 
-  Tent, 
-  Moon, 
-  Backpack, 
-  Flame, 
-  Flashlight, 
-  Compass,
-  Mountain,
-  Shirt,
+import {
+  Wind,
+  Wrench,
+  Refrigerator,
+  Zap,
+  Droplets,
+  Camera,
+  ArrowUpDown,
+  ThermometerSun,
 } from "lucide-react";
 
-const categories = [
+const services = [
   {
-    name: "Tenda",
-    description: "Dome, tunnel, camping family",
-    icon: Tent,
-    count: 45,
-    href: "/katalog?category=tenda",
-    color: "from-primary to-forest-light",
+    name: "Cuci AC",
+    description: "Bersihkan filter, evaporator & drainase",
+    icon: Wind,
+    href: "/layanan",
   },
   {
-    name: "Sleeping Bag",
-    description: "Mummy, rectangular, ultralight",
-    icon: Moon,
-    count: 32,
-    href: "/katalog?category=sleeping-bag",
-    color: "from-accent to-rust-dark",
+    name: "Isi Freon",
+    description: "Refrigerant R22/R410A tekanan optimal",
+    icon: ThermometerSun,
+    href: "/layanan",
   },
   {
-    name: "Carrier & Tas",
-    description: "Daypack, carrier 40-80L",
-    icon: Backpack,
-    count: 28,
-    href: "/katalog?category=carrier",
-    color: "from-forest-light to-primary",
+    name: "Perbaikan AC",
+    description: "Diagnosa & perbaikan semua masalah AC",
+    icon: Wrench,
+    href: "/layanan",
   },
   {
-    name: "Cooking Set",
-    description: "Kompor, nesting, peralatan masak",
-    icon: Flame,
-    count: 56,
-    href: "/katalog?category=cooking",
-    color: "from-rust-dark to-accent",
+    name: "Pemasangan AC",
+    description: "Instalasi AC baru & bekas, semua merek",
+    icon: ArrowUpDown,
+    href: "/layanan",
   },
   {
-    name: "Penerangan",
-    description: "Headlamp, senter, lampu tenda",
-    icon: Flashlight,
-    count: 24,
-    href: "/katalog?category=lighting",
-    color: "from-stone to-bark",
+    name: "Service Mesin Cuci",
+    description: "Perbaikan & perawatan mesin cuci",
+    icon: Droplets,
+    href: "/layanan",
   },
   {
-    name: "Navigasi",
-    description: "GPS, kompas, peta",
-    icon: Compass,
-    count: 18,
-    href: "/katalog?category=navigation",
-    color: "from-primary to-sage",
+    name: "Service Kulkas",
+    description: "Perbaikan kulkas semua merek",
+    icon: Refrigerator,
+    href: "/layanan",
   },
   {
-    name: "Pendakian",
-    description: "Trekking pole, crampon, harness",
-    icon: Mountain,
-    count: 35,
-    href: "/katalog?category=hiking",
-    color: "from-forest to-forest-light",
+    name: "Kelistrikan",
+    description: "Instalasi & perbaikan listrik rumah",
+    icon: Zap,
+    href: "/layanan",
   },
   {
-    name: "Pakaian",
-    description: "Jaket, celana, raincoat",
-    icon: Shirt,
-    count: 42,
-    href: "/katalog?category=clothing",
-    color: "from-accent to-stone",
+    name: "Pasang CCTV",
+    description: "Instalasi & konfigurasi CCTV",
+    icon: Camera,
+    href: "/layanan",
   },
 ];
 
@@ -82,15 +66,14 @@ export function Categories() {
   return (
     <section className="py-20">
       <div className="section-container">
-        {/* Header */}
         <div className="text-center mb-12">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent font-semibold text-sm uppercase tracking-wider"
+            className="text-primary font-semibold text-sm uppercase tracking-wider"
           >
-            Eksplorasi Kategori
+            Layanan Kami
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -99,7 +82,7 @@ export function Categories() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-display font-bold text-foreground mt-2"
           >
-            Temukan Gear yang Anda Butuhkan
+            Solusi Lengkap untuk Rumah & Kantor
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -108,45 +91,32 @@ export function Categories() {
             viewport={{ once: true }}
             className="text-muted-foreground mt-3 max-w-2xl mx-auto"
           >
-            Dari tenda hingga peralatan masak, kami menyediakan semua kebutuhan outdoor Anda
+            Dari service AC hingga pemasangan CCTV, semua dikerjakan oleh teknisi bersertifikasi
           </motion.p>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {categories.map((category, index) => (
+          {services.map((service, index) => (
             <motion.div
-              key={category.name}
-              initial={{ opacity: 0, scale: 0.9 }}
+              key={service.name}
+              initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.05 }}
               viewport={{ once: true }}
             >
               <Link
-                to={category.href}
+                to={service.href}
                 className="group block p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-strong text-center"
               >
-                {/* Icon */}
-                <div 
-                  className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${category.color} flex items-center justify-center shadow-medium group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <category.icon className="w-8 h-8 text-white" />
+                <div className="w-14 h-14 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-
-                {/* Name */}
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                  {category.name}
+                  {service.name}
                 </h3>
-
-                {/* Description */}
-                <p className="text-sm text-muted-foreground mt-1 mb-2">
-                  {category.description}
+                <p className="text-sm text-muted-foreground mt-1">
+                  {service.description}
                 </p>
-
-                {/* Count */}
-                <span className="text-xs font-medium text-accent">
-                  {category.count} item tersedia
-                </span>
               </Link>
             </motion.div>
           ))}

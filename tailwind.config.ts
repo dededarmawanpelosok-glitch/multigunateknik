@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
-        display: ["Space Grotesk", "system-ui", "sans-serif"],
+        sans: ["Open Sans", "system-ui", "sans-serif"],
+        display: ["Poppins", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,24 +61,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Extended earthy palette
-        forest: {
-          DEFAULT: "hsl(var(--forest))",
-          light: "hsl(var(--forest-light))",
+        cyan: {
+          DEFAULT: "hsl(var(--cyan))",
+          light: "hsl(var(--cyan-light))",
+          dark: "hsl(var(--cyan-dark))",
         },
-        pine: "hsl(var(--pine))",
-        sage: "hsl(var(--sage))",
-        rust: {
-          DEFAULT: "hsl(var(--rust))",
-          dark: "hsl(var(--rust-dark))",
-        },
-        sand: {
-          DEFAULT: "hsl(var(--sand))",
-          dark: "hsl(var(--sand-dark))",
-        },
-        cream: "hsl(var(--cream))",
-        stone: "hsl(var(--stone))",
-        bark: "hsl(var(--bark))",
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -94,14 +83,10 @@ export default {
         'strong': 'var(--shadow-lg)',
         'dramatic': 'var(--shadow-xl)',
         'glow': 'var(--shadow-glow)',
-        'glass': '0 8px 32px 0 rgba(31, 38, 35, 0.1)',
       },
       backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
         'gradient-hero': 'var(--gradient-hero)',
-        'gradient-card': 'var(--gradient-card)',
-        'gradient-accent': 'var(--gradient-accent)',
-        'gradient-forest': 'var(--gradient-forest)',
-        'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
       },
       keyframes: {
         "accordion-down": {
@@ -113,36 +98,12 @@ export default {
           to: { height: "0" },
         },
         "fade-up": {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "fade-in": {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
-        },
-        "slide-in-right": {
-          "0%": { transform: "translateX(100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
-        "slide-in-left": {
-          "0%": { transform: "translateX(-100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
-        "scale-in": {
-          "0%": { transform: "scale(0.9)", opacity: "0" },
-          "100%": { transform: "scale(1)", opacity: "1" },
-        },
-        "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-        },
-        "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(24 85% 52% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(24 85% 52% / 0.5)" },
-        },
-        "shimmer": {
-          "0%": { backgroundPosition: "-200% 0" },
-          "100%": { backgroundPosition: "200% 0" },
         },
       },
       animation: {
@@ -150,15 +111,6 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out forwards",
         "fade-in": "fade-in 0.5s ease-out forwards",
-        "slide-in-right": "slide-in-right 0.5s ease-out forwards",
-        "slide-in-left": "slide-in-left 0.5s ease-out forwards",
-        "scale-in": "scale-in 0.4s ease-out forwards",
-        "float": "float 3s ease-in-out infinite",
-        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
-        "shimmer": "shimmer 2s linear infinite",
-      },
-      transitionTimingFunction: {
-        'bounce-soft': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
       },
     },
   },
