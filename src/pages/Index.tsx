@@ -2,9 +2,9 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { Hero } from "@/components/home/Hero";
-import { FeaturedGear } from "@/components/home/FeaturedGear";
 import { Categories } from "@/components/home/Categories";
 import { HowItWorks } from "@/components/home/HowItWorks";
+import { FeaturedGear } from "@/components/home/FeaturedGear";
 import { RentalPackages } from "@/components/home/RentalPackages";
 import { Testimonials } from "@/components/home/Testimonials";
 
@@ -14,9 +14,9 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         <Hero />
-        <FeaturedGear />
         <Categories />
         <HowItWorks />
+        <FeaturedGear />
         <RentalPackages />
         <Testimonials />
       </main>
