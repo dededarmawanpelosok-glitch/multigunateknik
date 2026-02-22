@@ -30,7 +30,7 @@ export function Header() {
   return (
     <>
       {/* Top bar */}
-      <div className="hidden lg:block bg-primary text-primary-foreground py-2">
+      <div className="hidden lg:block bg-foreground text-background py-2">
         <div className="section-container flex items-center justify-between text-sm">
           <div className="flex items-center gap-6">
             <a href="tel:+6282312290199" className="flex items-center gap-2 hover:opacity-80 transition-opacity">

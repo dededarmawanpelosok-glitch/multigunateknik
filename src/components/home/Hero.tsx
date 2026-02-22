@@ -8,7 +8,7 @@ const WA_BOOKING_URL = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Ha
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/10">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/15">
       <div className="section-container py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
@@ -29,7 +29,8 @@ export function Hero() {
               className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight mb-6"
             >
               AC Rusak?{" "}
-              <span className="text-primary">Teknisi Datang Hari Ini</span>
+              <span className="text-primary">Teknisi Datang</span>{" "}
+              <span className="text-accent">Hari Ini</span>
               {" "}— Cepat, Bersih, Bergaransi.
             </motion.h1>
 
@@ -91,7 +92,7 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="relative"
           >
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-accent/30">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-accent/40">
               <img
                 src={heroImage}
                 alt="Teknisi MULTI GUNA TEKNIK sedang service AC"
