@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* MULTI GUNA TEKNIK - Design System
-   Clean, modern, professional AC service aesthetic
+   Red & Yellow brand palette from logo
    All colors MUST be HSL
 */
 
@@ -11,49 +11,50 @@
 
 @layer base {
   :root {
-    /* Core palette - Cyan & Gray */
+    /* Core palette - Red & Yellow from logo */
     --background: 0 0% 100%;
     --foreground: 0 0% 15%;
 
-    --card: 210 20% 98%;
+    --card: 0 0% 99%;
     --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Cyan - Primary brand */
-    --primary: 193 100% 40%;
+    /* Red - Primary brand (from logo) */
+    --primary: 0 72% 47%;
     --primary-foreground: 0 0% 100%;
 
-    /* Light Gray - Secondary */
-    --secondary: 210 17% 98%;
+    /* Light warm gray - Secondary */
+    --secondary: 40 10% 97%;
     --secondary-foreground: 0 0% 29%;
 
     /* Muted */
-    --muted: 210 14% 96%;
+    --muted: 40 8% 96%;
     --muted-foreground: 0 0% 45%;
 
-    /* Cyan Dark - Accent */
-    --accent: 187 78% 40%;
-    --accent-foreground: 0 0% 100%;
+    /* Yellow/Gold - Accent (from logo) */
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 14% 90%;
-    --input: 210 14% 92%;
-    --ring: 193 100% 40%;
+    --border: 30 10% 90%;
+    --input: 30 10% 92%;
+    --ring: 0 72% 47%;
 
     --radius: 0.75rem;
 
     /* Extended palette */
-    --cyan: 193 100% 40%;
-    --cyan-light: 193 80% 55%;
-    --cyan-dark: 187 78% 40%;
+    --red: 0 72% 47%;
+    --red-light: 0 65% 58%;
+    --red-dark: 0 80% 38%;
+    --yellow: 45 100% 50%;
+    --yellow-light: 48 100% 62%;
     --gray: 0 0% 29%;
-    --gray-light: 210 17% 95%;
+    --gray-light: 40 10% 95%;
     --gray-medium: 0 0% 42%;
-    --blue: 216 98% 50%;
     --success: 145 63% 42%;
     --warning: 38 92% 50%;
 
@@ -62,60 +63,60 @@
     --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.08);
     --shadow-lg: 0 8px 24px hsl(0 0% 0% / 0.1);
     --shadow-xl: 0 16px 40px hsl(0 0% 0% / 0.12);
-    --shadow-glow: 0 0 30px hsl(193 100% 40% / 0.25);
+    --shadow-glow: 0 0 30px hsl(0 72% 47% / 0.25);
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(193 100% 40%) 0%, hsl(187 78% 40%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(193 100% 40%) 0%, hsl(216 98% 50%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 72% 47%) 0%, hsl(0 80% 38%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 72% 47%) 0%, hsl(45 100% 50%) 100%);
 
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 0 0% 15%;
-    --sidebar-primary: 193 100% 40%;
+    --sidebar-primary: 0 72% 47%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 17% 95%;
+    --sidebar-accent: 40 10% 95%;
     --sidebar-accent-foreground: 0 0% 29%;
-    --sidebar-border: 210 14% 90%;
-    --sidebar-ring: 193 100% 40%;
+    --sidebar-border: 30 10% 90%;
+    --sidebar-ring: 0 72% 47%;
   }
 
   .dark {
-    --background: 220 15% 8%;
-    --foreground: 210 14% 95%;
+    --background: 0 0% 8%;
+    --foreground: 30 10% 95%;
 
-    --card: 220 12% 12%;
-    --card-foreground: 210 14% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 30 10% 95%;
 
-    --popover: 220 12% 12%;
-    --popover-foreground: 210 14% 95%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 30 10% 95%;
 
-    --primary: 193 80% 55%;
-    --primary-foreground: 220 15% 8%;
+    --primary: 0 65% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 10% 18%;
-    --secondary-foreground: 210 14% 85%;
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 30 10% 85%;
 
-    --muted: 220 10% 15%;
-    --muted-foreground: 210 10% 60%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 30 5% 60%;
 
-    --accent: 187 70% 50%;
-    --accent-foreground: 220 15% 8%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 10% 20%;
-    --input: 220 10% 18%;
-    --ring: 193 80% 55%;
+    --border: 0 0% 20%;
+    --input: 0 0% 18%;
+    --ring: 0 65% 55%;
 
-    --sidebar-background: 220 12% 10%;
-    --sidebar-foreground: 210 14% 90%;
-    --sidebar-primary: 193 80% 55%;
-    --sidebar-primary-foreground: 220 15% 8%;
-    --sidebar-accent: 220 10% 15%;
-    --sidebar-accent-foreground: 210 14% 85%;
-    --sidebar-border: 220 10% 18%;
-    --sidebar-ring: 193 80% 55%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 30 10% 90%;
+    --sidebar-primary: 0 65% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 30 10% 85%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 65% 55%;
   }
 }
 
@@ -138,12 +139,10 @@
 }
 
 @layer components {
-  /* Section container */
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Card elevated */
   .card-elevated {
     @apply bg-card rounded-2xl border border-border;
     box-shadow: var(--shadow-md);
@@ -155,7 +154,6 @@
     transform: translateY(-2px);
   }
 
-  /* Gradient accent button */
   .btn-primary-gradient {
     @apply text-primary-foreground font-semibold rounded-2xl;
     background: var(--gradient-primary);
@@ -164,11 +162,10 @@
   }
 
   .btn-primary-gradient:hover {
-    box-shadow: 0 0 40px hsl(193 100% 40% / 0.35);
+    box-shadow: 0 0 40px hsl(0 72% 47% / 0.35);
     transform: translateY(-2px);
   }
 
-  /* WhatsApp floating button */
   .whatsapp-float {
     @apply fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-full font-semibold;
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
@@ -182,7 +179,6 @@
     box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
   }
 
-  /* Input glass */
   .input-glass {
     @apply w-full px-4 py-3 rounded-xl border border-border bg-background;
     @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary;
@@ -194,7 +190,6 @@
     box-shadow: var(--shadow-md);
   }
 
-  /* Badge styles */
   .badge-service {
     @apply px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full bg-primary text-primary-foreground;
   }
@@ -219,7 +214,6 @@
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
