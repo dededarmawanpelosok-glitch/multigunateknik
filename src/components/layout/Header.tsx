@@ -11,6 +11,7 @@ const WA_URL = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Halo MULTI
 const navLinks = [
   { name: "Beranda", path: "/" },
   { name: "Layanan", path: "/layanan" },
+  { name: "Portfolio", path: "/portfolio" },
   { name: "Booking", path: "/booking" },
   { name: "Tentang Kami", path: "/tentang" },
 ];
