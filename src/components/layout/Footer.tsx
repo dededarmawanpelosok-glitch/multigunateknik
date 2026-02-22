@@ -87,7 +87,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-background/10">
+      <div className="border-t border-accent/20">
         <div className="section-container py-6 text-center">
           <p className="text-sm text-background/50">
             © 2026 MULTI GUNA TEKNIK. Semua hak dilindungi.

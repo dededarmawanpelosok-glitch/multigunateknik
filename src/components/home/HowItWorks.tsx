@@ -67,7 +67,7 @@ export function HowItWorks() {
               )}
 
               <div className="relative p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-strong">
-                <div className="absolute -top-4 -left-2 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center">
+                <div className="absolute -top-4 -left-2 w-10 h-10 rounded-full bg-accent text-accent-foreground flex items-center justify-center">
                   <span className="text-sm font-bold">{step.number}</span>
                 </div>
 

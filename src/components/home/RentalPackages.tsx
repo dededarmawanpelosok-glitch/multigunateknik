@@ -81,7 +81,7 @@ export function RentalPackages() {
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               className={`relative p-6 rounded-2xl bg-card border-2 ${
-                pkg.popular ? "border-primary ring-2 ring-primary/20" : "border-border hover:border-primary/30"
+                pkg.popular ? "border-accent ring-2 ring-accent/20" : "border-border hover:border-primary/30"
               } transition-all duration-300 hover:shadow-strong flex flex-col`}
             >
               {pkg.popular && (

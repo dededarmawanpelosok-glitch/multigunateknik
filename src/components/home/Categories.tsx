@@ -64,7 +64,7 @@ const services = [
 
 export function Categories() {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gradient-to-b from-background to-accent/5">
       <div className="section-container">
         <div className="text-center mb-12">
           <motion.span
