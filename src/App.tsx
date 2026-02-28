@@ -9,6 +9,7 @@ import Booking from "./pages/Booking";
 import Tentang from "./pages/Tentang";
 import PortfolioPage from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
+import SuspendedOverlay from "./components/SuspendedOverlay";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <SuspendedOverlay />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
