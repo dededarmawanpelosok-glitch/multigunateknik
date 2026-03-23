@@ -122,7 +122,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden fixed inset-x-0 top-[72px] z-40 bg-background/98 backdrop-blur-xl border-b border-border shadow-lg"
+            className="lg:hidden fixed inset-x-0 top-[72px] z-40 bg-background border-b border-border shadow-lg"
           >
             <div className="section-container py-6 space-y-3">
               {navLinks.map((link, index) => (
