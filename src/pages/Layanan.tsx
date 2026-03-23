@@ -15,7 +15,7 @@ const services = [
     name: "Cuci AC",
     description: "Cuci AC split/standing: bersihkan filter, evaporator, drainase, pastikan udara sejuk.",
     icon: Wind,
-    price: "Mulai Rp 80.000",
+    price: "Mulai Rp 100.000",
     duration: "45-60 menit",
     warranty: "1 bulan",
     features: ["Cuci filter & cover", "Pembersihan evaporator", "Cek drainase", "Pengecekan performa"],

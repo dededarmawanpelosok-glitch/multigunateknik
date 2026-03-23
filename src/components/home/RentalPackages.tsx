@@ -8,7 +8,7 @@ const packages = [
   {
     id: 1,
     name: "Cuci AC Standar",
-    price: "Mulai Rp 80.000",
+    price: "Mulai Rp 100.000",
     description: "Pembersihan AC split basic",
     items: [
       "Cuci filter & evaporator",
