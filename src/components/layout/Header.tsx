@@ -53,7 +53,7 @@ export function Header() {
       <motion.header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-background/95 backdrop-blur-lg shadow-md py-2"
+            ? "bg-background shadow-md py-2 border-b border-border"
             : "bg-background py-3"
         }`}
         initial={{ y: -100 }}
